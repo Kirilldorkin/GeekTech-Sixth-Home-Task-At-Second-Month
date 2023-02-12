@@ -1,0 +1,19 @@
+.button {
+    background-color: #ffffff;
+}
+
+.button > a {
+    color: #222222;
+}
+
+.pop-up_body {
+    background-color: #ffffff;
+}
+
+.change-theme[data-theme="dark"] {
+    display: none;
+}
+
+.change-theme[data-theme="light"] {
+    display: block;
+}

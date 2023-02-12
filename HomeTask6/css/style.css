@@ -1,0 +1,119 @@
+* {
+    padding: 0;
+    margin: 0;
+    right: 0;
+    left: 0;
+    top: 0;
+    box-sizing: border-box;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    font-family: 'Roboto', sans-serif;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem 8rem;
+    align-items: center;
+}
+
+.theme > i {
+    cursor: pointer;
+    font-size: 24px;
+}
+
+.button {
+    background-color: #efefef;
+    padding: 0.7rem 1rem;
+    border: 2px solid #000;
+    border-radius: 10px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
+.button>a {
+    text-decoration: none;
+    color: #000;
+}
+
+.pop-up {
+    /* display: none; */
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    /* background-color: #00000080; */
+    backdrop-filter: blur(2px);
+    z-index: 2;
+    transform: translateY(-44.5%) scale(0);
+    transition: .4s ease-in-out;
+}
+
+.pop-up.active {
+    /* display: block; */
+    transform: translateY(0%) scale(100%);
+}
+
+.pop-up_container {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+}
+
+.pop-up_body {
+    margin: auto;
+    width: 500px;
+    background-color: #fff;
+    box-shadow: 4px 4px 28px rgba(0, 0, 0, 0.3);
+    border-radius: 12px;
+    padding: 1rem .5rem 1.2rem 1rem;
+}
+
+.wrong {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.2rem;
+}
+
+.wrong > i {
+    cursor: pointer;
+}
+
+.pop-up_buttons {
+    display: flex;
+    gap: .4rem;
+    margin-top: 1rem;
+}
+
+.button-accept {
+    background-color: #14df12;
+    padding: 0.35rem 0.5rem;
+    border: 2px solid #14700f;
+    border-radius: 10px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
+.button-decline {
+    background-color: #f40a0a;
+    padding: 0.35rem 0.5rem;
+    border: 2px solid #8f3432;
+    border-radius: 10px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
+.button-accept > a, 
+.button-decline > a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 0.8rem;
+    vertical-align: middle;
+}

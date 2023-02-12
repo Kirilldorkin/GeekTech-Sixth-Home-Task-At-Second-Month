@@ -1,0 +1,31 @@
+body {
+    background-color: #222222;
+}
+
+.button {
+    border: #ffffff;
+}
+
+.button > a {
+    color: #222222;
+}
+
+.theme > i {
+    color: #ffffff;
+}
+
+.pop-up_body {
+    background-color: #222222;
+}
+
+h2, p {
+    color: #ffffff;
+}
+
+.change-theme[data-theme="dark"] {
+    display: none;
+}
+
+.change-theme[data-theme="light"] {
+    display: block;
+}
